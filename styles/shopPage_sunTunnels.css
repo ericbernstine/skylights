@@ -1,0 +1,368 @@
+.mainBlock{
+    position: absolute; /* Position the estimateBlock absolutely within #innerHeading */
+    top: 50%; /* Center vertically */
+    left: 50%; /* Center horizontally */
+    transform: translate(-50%, -50%); /* Offset by 50% of its own width and height to truly center */
+    width: 80%;
+    height: 85%;
+    background-color: #eeeeee;
+    opacity: 97%;
+    margin-top: 40px;
+    border-radius: 5px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 1px 150px;
+}
+.shopBlock{
+    margin-left: 5px;
+    margin-right: 5px;
+    flex-basis: calc(33.33% - 60px);
+    border-radius: 5px;
+}
+
+.shopBlock img{
+    height: 200px;
+    width: auto;
+    display: block;
+    margin: 5px auto;
+}
+
+#shopBlockBtn{
+    margin-top: 8px;
+    background: #eeeeee;
+}
+#shopBlockBtn:hover{
+    background: #0369a0;
+}
+.shopBlock .description{
+    margin-top: 10px;
+    margin-left: 8px;
+    width: 80%;
+    height: 70px;
+    font-size: 82%;
+    padding-bottom: 5px;
+}
+body{
+    background-color: #dddddd;
+}
+
+
+.flexible, .rigid{
+    background-color: #e0dcdc;
+    border-radius: 5px;
+}
+.flexible img, .rigid img{
+    height: 500px;
+    width: auto;
+    border-radius: 5px;
+}
+.imgWrap{
+    padding-top: 10px;
+}
+.shopBlock h3{
+    font-size: 120%;
+}
+
+@media (max-width: 1500px){
+    .shopBlock img{
+        height: 400px;
+        width: auto;
+    }
+    .shopBlock .description{
+        font-size: 85%;
+    }
+}
+
+
+
+/* Description Blocks  */
+.descriptionSection{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #dddddd;
+    width: 100%;
+    height: 100%;
+    padding: 0;
+}
+
+.descriptionContent{
+    background-color: #ededed;
+    width: 80%;
+    height: 100%;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+
+.descriptionBlock{
+    padding-top:10px ;
+    padding-bottom: 15px;
+    display: grid;
+    grid-template-columns: repeat(7, auto);
+    grid-template-rows: repeat(7, auto);
+}
+.descHeading{
+    grid-row: 1 / 1;
+    grid-column: 1 / 1;
+    margin-left: 8px;
+    margin-top: 5px;
+    
+}
+.descCarousel{
+    grid-row: 2 / 2;
+    grid-column: 1 / 1;
+    margin-left: 10px;
+}
+/* carousel buttons */
+.descCarousel button{
+    margin: 5px;
+    position: absolute;
+    font-size: 2.5rem;
+    top: 50%;
+    transform: translateY(-50%);
+    border: none;
+    background-color: #727272;
+    border-radius: 20px;
+    color: #eeeeee;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+.descCarousel button:hover{
+    color: #0369a0;
+    background-color: #84848460;
+}
+.prev{
+  left: 0;
+}
+.next{
+ right: 10px;
+}
+
+.slider{
+    position: relative;
+    width: 100%;
+    margin: auto;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+}
+.slides {
+    display: flex; /* Ensure that images are in a row */
+    justify-content: center;
+    align-items: center;
+    height: 300px; /* Set a fixed height for the slider */
+    width: 400px;
+}
+
+.slides img {
+    height: 100%; /* Ensure images fill the height of the container */
+    width: auto; /* Maintain aspect ratio */
+    max-width: 400px;
+    display: none;
+    object-fit: contain; /* Ensure images fit within the container */
+    border-radius: 5px;
+}
+.slides img:hover{
+    cursor: pointer;
+}
+#manual4{
+    border-radius: 5px;
+}
+
+img.displaySlide{
+    display: block;
+    animation-name: fade;
+    animation-duration: 2s;
+}
+@keyframes fade {
+    from {opacity: .1}
+    to {opacity: 1}
+}
+
+/* Carousel Nav */
+.carouselNav{
+    margin-top: 30px;
+    grid-row: 3 / 3;
+    display: flex;
+    justify-content: center;
+}
+.carouselNav .carouselIndicator.curInd {
+    background: rgba(0, 0, 0, 0.9);
+}
+
+.carouselIndicator{
+    border: 0;
+    border-radius: 50%;
+    width: 15px;
+    height: 15px;
+    background: rgba(0, 0, 0, 0.4);
+    margin: 0 12px;
+    cursor: pointer;
+}
+
+/* PopUp functionality */
+.slider .popup-image{
+    position: fixed;
+    top: 0;
+    left: 0;
+    background: rgba(0, 0, 0, 0.9);
+    height: 100%;
+    width: 100%;
+    z-index: 97;
+    display: none;
+}
+.popup-desc {
+    position: absolute;
+    top: 50%;
+    right: 15%;
+    transform: translateY(-50%);
+    color: #fff;
+    text-align: left;
+    max-width: 300px;
+    font-size: 90%;
+}
+
+.popup-desc h3, .popup-desc p {
+    margin: 5px 0;
+}
+
+.slider .popup-image .popup-details{
+    z-index: 98;
+}
+
+.slider .popup-image span{
+    position: absolute;
+    top: 0; 
+    right: 15px;
+    font-size: 40px;
+    font-weight: bolder;
+    color: #fff;
+    cursor: pointer;
+    z-index: 99;
+}
+
+.slider .popup-image img{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border: 3px solid #fff;
+    border-radius: 10px;
+    width: 700px;
+    object-fit: cover;
+}
+
+@media (max-width: 1500px) {
+    .slider .popup-image img {
+        width: 45%;
+        height: auto;
+        max-width: 600px;
+        position: relative; /* Change position to relative */
+    }
+    .popup-desc {
+        position: absolute;
+        top: 50%;
+        right: 4%;
+        transform: translateY(-50%);
+        color: #fff;
+        text-align: left;
+        max-width: 300px;
+        font-size: 90%;
+    }
+}
+@media (max-width: 1000px) {
+    .slider .popup-image img {
+        width: 45%;
+        height: auto;
+        max-width: 600px;
+        position: relative; /* Change position to relative */
+        top: 35%;
+    }
+    .popup-desc {
+        position: absolute;
+        top: 65%; /* Adjust the top to position below the image */
+        left: 50%;
+        transform: translateX(-50%);
+        color: #fff;
+        text-align: center;
+        max-width: 300px;
+        font-size: 90%;
+    }
+}
+
+
+
+.innerdescriptionBlock{
+    grid-row: 1 / 7;
+    grid-column: 5 / 7;
+    display: grid;
+    grid-template-columns: repeat(7, auto);
+    grid-template-rows: repeat(7, auto);
+    padding-left: 180px;
+}
+.descPricing{
+    grid-row: 2 / 2;
+    grid-column: 2 / 7;
+    margin-bottom: 15px;
+    margin-top: 20px;
+}
+.descButton{
+    margin-top: 10px;
+    margin-bottom: 10px;
+    grid-row: 3 / 3;
+    grid-column: 2 / 7;
+}
+.descButton button{
+    background: rgb(5, 128, 194);
+}
+.descButton button:hover, .descButton a:hover{
+    background: #0369a0;
+}
+.descButton a{
+    color: rgb(5, 128, 194);
+    border-color: rgb(5, 128, 194);
+}
+.descInfo{
+    grid-row: 4 / 4;
+    grid-column: 2 / 4;
+    width: 100%; /* Adjust width as needed */
+    height: 100% ;
+    overflow-y: auto; /* Make overflow scrollable vertically */
+    overflow-x: hidden; /* Hide horizontal overflow */
+}
+
+.descWarranty{
+    grid-row: 5 / 5;
+    grid-column: 2 / 5;
+}
+.descSpecs{
+    grid-row: 6 / 6;
+    grid-column: 2 / 5;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.border{
+    margin-top: 10px;
+    margin-bottom: 10px;
+    position: relative;
+    top: 50%; /* Center vertically */
+    left: 50%; /* Center horizontally */
+    transform: translate(-50%, -50%); 
+    width: 85%;
+    height: 8px;
+    border-radius: 25px;
+    background-color: #0481c3;
+    color: #0481c3;
+}
+.sponsorImages{
+    padding-top: 10px !important;
+    background-color: #dddddd !important;
+}
+.sponsorSectionSecondary{
+    background-color: #dddddd !important;
+}
+.sponsorQuery{
+    margin-top: 10px !important;
+    background-color: #dddddd !important;
+}

@@ -1,0 +1,156 @@
+/* CONTACT PAGE */
+
+
+#estimatePage #innerHeading {
+    position: relative; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; 
+}
+
+.active {
+    display: none;
+}
+
+.inactive {
+    display: block;
+}
+
+.burger.open .inactive {
+    display: none;
+}
+
+.burger.open .active {
+    display: block;
+}
+
+.estimateBlock {
+    position: absolute; /* Position the estimateBlock absolutely within #innerHeading */
+    top: 50%; /* Center vertically */
+    left: 50%; /* Center horizontally */
+    transform: translate(-50%, -50%); /* Offset by 50% of its own width and height to truly center */
+    width: 85%;
+    height: 85%;
+    background-color: #eeeeee;
+    opacity: 97%;
+    margin-top: 40px;
+    border-radius: 5px;
+    display: grid;
+    grid-template-rows: repeat(8, 1fr);
+    grid-template-columns: repeat(8, 1fr);
+}
+.estiamteForm{
+    grid-column: 5 / 9;
+    grid-row: 1 / 9;
+}
+.estiamteForm h1{
+    font-weight: 600;
+    color: rgba(5, 128, 194, 0.8);
+}
+.inner_estiamteForm{
+    margin-top: 2%;
+    margin-left: 2%;
+    gap: 10px;
+    width: 95%;
+    height: 95%;
+    background-color: #dcdada;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10%;
+}
+.inner_estiamteForm input, textarea {
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: 80%;
+    padding: 5px;
+}
+.estimateLogoHeading{
+    display: grid;
+    grid-template-columns: repeat(5, auto);
+    grid-template-columns: repeat(5, auto);
+    margin-bottom: 10%;
+}
+.estimateLogo{
+    width: 10.3125rem;
+    height: 7.03125rem;
+    grid-row: 1 / 1;
+    grid-column: 1 / 1;
+    margin-top: 25px;
+
+}
+.estimateHeading{
+    padding-left: 15px;
+    grid-row: 1 / 1;
+    grid-column: 2 / 3;
+}
+
+.headingNote{
+    padding-top: 2%;
+    font-size: smaller;
+}
+
+.contactInfo{
+    grid-column: 1 / 5;
+    grid-row: 5 / 9;
+    margin-left: 4%;
+}
+.innerContactInfo{
+    display: grid;
+    grid-template-columns: repeat(5, auto);
+    grid-template-rows: repeat(5, auto); 
+}
+.ourEmail{
+    grid-column: 1 / 1;
+
+}
+.locations{
+    margin-top: 10px;
+}
+.query_locations{
+    display: none;
+    grid-column: 1 / 9;
+    grid-row: 8 / 9;
+}
+.locations h5{
+    font-weight: 450;
+}
+.locations p {
+    font-size: 82%;
+    padding: 0;
+    padding-top: 2px;
+    margin: 0;
+}
+.ourPhone{
+    grid-column: 3 / 3;
+}
+.contactInfo a{
+    font-size: 90% 
+}
+.contactInfo h5{
+    font-weight: 450;
+}
+.whyContact{
+    grid-column: 1 / 5;
+    grid-row: 1 / 4;
+    margin-left: 4%;
+    margin-top: 4%;
+    width: 75%;
+    height: 95%;
+}
+.whyContact p{
+    font-size: 90%;
+}
+
+.sponsorSectionSecondary {
+    height: 320px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #fff;
+    padding: 20px;
+    margin-top: 20px;
+}

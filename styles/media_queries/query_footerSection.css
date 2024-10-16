@@ -1,0 +1,115 @@
+/* CUSTOMER REVIEWS */
+@media screen and (max-width:700px) {
+    .testimonialSection {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .elfsight-app-b2c97f88-710c-4d05-b94e-a5c5e601f585 {
+        width: 95%;
+    }
+}
+
+@media screen and (max-width: 1000px) {
+    .sponsorSection {
+        display: none !important;
+    }
+
+    .sponsorSectionSecondary {
+        display: none !important;
+    }
+
+    .sponsorContent {
+        height: 150px;
+        width: 150px;
+        font-size: 88%;
+    }
+
+    .sponsorImages {
+        display: none !important;
+    }
+
+    .sponsorText {
+        width: 92%;
+        padding: 5px;
+    }
+
+    .sponsorQuery {
+        display: block !important;
+        width: 100%;
+    }
+
+    .sponsorQuery img {
+        margin-right: 15px;
+    }
+
+    .top {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+    }
+
+    .bottom {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+    }
+
+    .topImages {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+    }
+
+    .bottomImages {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+    }
+
+    .topImages img,
+    .bottomImages img {
+        width: 100px !important;
+        height: auto !important;
+    }
+
+    .top_watermark {
+        display: none !important;
+    }
+}
+
+@media screen and (max-width: 580px) {
+    .sponsorContent {
+        height: 100px;
+        width: 100px;
+        font-size: 65%;
+    }
+
+    .sponsorText {
+        height: 100px !important;
+        width: 100px !important;
+        border: 3px solid rgba(56, 139, 217, 0.7) !important;
+        padding: 0px !important;
+        border-radius: 40% !important;
+        filter: none !important;
+    }
+
+    .topImages img,
+    .bottomImages img {
+        width: 80px !important;
+        height: auto !important;
+    }
+
+    .bottomImages img {
+        margin-left: 10px;
+    }
+
+    .sponsorSection {
+        padding: none;
+    }
+
+    .watermark {
+        text-align: center;
+    }
+}

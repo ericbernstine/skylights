@@ -1,0 +1,84 @@
+@media screen and (max-width:1020px){
+    .mainBlock{
+        width: 93% !important;
+        height: 88% !important;
+    }
+    .imgBlock1, .imgBlock2{
+        width: 320px !important;
+        height: auto !important;
+    }
+    .imgBlock1 img, .imgBlock2 img {
+        width: 300px !important;
+        height: auto !important;
+    }
+    .descBlock1_details, .descBlock2_details{
+       padding: 0 !important;
+    }
+}
+
+@media screen and (max-width:800px){
+    .descBlock1 h4, .descBlock2 h4{
+        font-size: 250% !important;
+    }
+    .imgBlock1{
+        margin-left: 8px !important;
+    }
+    .imgBlock2{
+        margin-right: 5px !important;
+    }
+    .descBlock1{
+        margin-left: 5px !important;
+    }
+    .imgBlock2{
+        grid-row: 5 / 8 !important;
+    }
+    .descBlock2{
+        grid-row: 5 / 11 !important;
+        margin-left: 8px !important;
+    }
+}
+@media screen and (max-width:700px){
+    .imgBlock1, .imgBlock2{
+        width: 210px !important;
+        height: 30% !important;
+    }
+    .imgBlock1 img, .imgBlock2 img {
+        width: 200px !important;
+        height: auto !important;
+    }
+    .mainBlock{
+        display: flex !important;
+        flex-direction: column !important;
+        width: 98% !important;
+        padding-bottom: 10px !important;
+        box-sizing: border-box;
+    }
+    .imgBlock2{
+        margin-left: 8px !important;
+    }
+    .imgBlock1, .imgBlock2{
+        align-self: center;
+    }
+    .descBlock1 a, .descBlock2 a{
+        margin-top: 4px !important;
+        margin-bottom: 4px !important;
+    }
+    .descBlock1 h4, .descBlock2 h4{
+        font-size: 140% !important;
+        text-align: center;
+    }
+    .descBlock1_details, .descBlock2_details{
+        width: 100% !important;
+    }
+    .descBlock1_details p{
+        font-size: 75% !important;
+        padding-bottom: 0px !important;
+        margin-bottom: 0px !important;
+    }
+    .descBlock2_details p{
+        font-size: 75% !important;
+        padding-bottom: 0px !important;
+        margin-bottom: 0px !important;
+    }
+}
+

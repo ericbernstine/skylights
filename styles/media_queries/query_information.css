@@ -1,0 +1,72 @@
+@media screen and (max-width:900px){
+    .mainBlock{
+        width: 95% !important;
+        height: 89% !important;
+    }
+    /* .imgslot{
+        grid-column: 5 / 9;
+        grid-row: 10 / 12;
+    } */
+    .imgslot img{
+        width: 200px !important;
+        height: auto;
+    }
+    .ques5{
+        margin-bottom: 0px !important;
+    }
+    .ques4{
+        margin-top: 0px !important;
+    }
+
+}
+
+@media screen and (max-width: 550px){
+    .ques1, .ques2, .ques3, .ques4, .ques5{
+        margin-left: 10px !important;
+    } 
+    .ques1 h4, .ques2 h4, .ques3 h4, .ques4 h4, .ques5 h4{
+        margin-top: 0px !important;
+    }
+    .mainBlock{
+        overflow-y: hidden !important;
+    }
+    .imgslot img{
+        display: none !important;
+    }
+    .descriptionBlock {
+        display: flex !important;
+        flex-direction: column !important;
+    }
+    .footnote{
+        flex-direction: column !important;
+        justify-content: center !important;
+    }
+    .footQuote{
+        width: 95% !important;
+        font-size: 80% !important;
+    }
+    .number{
+        margin-bottom: 10px;
+    }
+    .collapse div{
+        max-height: 200px !important;
+        overflow-y: scroll !important;
+    }
+}
+
+@media screen and (max-width: 400px){
+    .descriptionBlock h4{
+        font-size: 90% !important;
+    }
+    .descriptionBlock p{
+        font-size: 90% !important;
+    }
+    .descriptionBlock a{
+        transform: scale(0.8);
+    }
+    .footQuote{
+        width: 95% !important;
+        font-size: 75% !important;
+    }
+
+}

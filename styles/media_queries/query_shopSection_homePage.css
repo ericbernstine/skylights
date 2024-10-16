@@ -1,0 +1,28 @@
+@media screen and (max-width: 865px){
+    .homePage_shop{
+        padding-top: 20px;
+        height: 1200px;
+        margin-bottom: 50px !important;
+    }
+    #shopSection{
+        gap: 20px 20px;
+    }
+}
+
+@media screen and (max-width: 595px){
+    .homePage_shop{
+        padding-top: 20px;
+        height: 1650px;
+        background-image: linear-gradient(#f7f7f5, #d1cfcf);
+    }
+    .homePage_shop .card_body{
+        height: 300px;
+        width: auto;
+    }
+    .homePage_shop .card{
+        margin-top: 10px;
+    }
+    #shopSection{
+        gap: 20px 20px;
+    }
+}

@@ -1,0 +1,138 @@
+/* Shop Block Section */
+@media screen and (max-width: 1250px) {
+    .shopBlock .description {
+        height: 110px !important;
+        padding-bottom: 10px;
+    }
+}
+
+@media screen and (max-width:1000px) {
+    .shopBlock .imgWrap {
+        padding: 10px !important;
+    }
+
+    .mainBlock {
+        gap: 1px 100px !important;
+        align-items: flex-start !important;
+    }
+    .shopBlock{
+        margin-top: 20px;
+    }
+    .descriptionContent {
+        width: 90% !important;
+    }
+    body{
+        background-color: #dddddd;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    .mainBlock {
+        gap: 1px 70px !important;
+        width: 95% !important;
+    }
+}
+
+@media screen and (max-width:700px) {
+
+    .flexible img,
+    .rigid img {
+        height: 300px !important;
+        width: auto !important;
+    }
+
+    .mainBlock {
+        gap: 1px 75px !important;
+    }
+
+    .shopBlock h3 {
+        font-size: 95% !important;
+    }
+
+    .shopBlock .description {
+        height: 135px !important;
+        padding-bottom: 10px;
+    }
+}
+
+@media screen and (max-width: 580px) {
+    .mainBlock {
+        gap: 1px 15px !important;
+    }
+
+    .flexible img,
+    .rigid img {
+        height: 280px !important;
+        width: auto !important;
+    }
+
+    .shopBlock h3 {
+        font-size: 80% !important;
+        margin-top: 10px !important;
+    }
+
+    .shopBlock .description {
+        height: 180px !important;
+        padding-bottom: 10px;
+    }
+}
+
+@media screen and (max-width: 390px) {
+
+    .flexible img,
+    .rigid img {
+        height: 220px !important;
+        width: auto !important;
+    }
+
+    .shopBlock h3 {
+        margin-top: 10px !important;
+    }
+}
+
+/* Description Section */
+@media screen and (max-width: 1350px){
+    .descPricing img {
+        width: 290px !important;
+        height: auto !important;
+    }
+}
+@media screen and (max-width: 1050px) {
+    .descriptionContent{
+        height: auto;
+    }
+    .descriptionBlock {
+        display: flex !important;
+        flex-direction: column !important;
+        height: auto !important;
+    }
+    .innerdescriptionBlock{
+        padding-left: 15px !important;
+        margin-bottom: 55px;
+        order: 2;
+    }
+    .carouselIndicator{
+        border-radius: 50% !important;
+        width: 25px !important;
+        height: 25px !important;
+        background: rgba(0, 0, 0, 0.4);
+        margin: 0 10px;
+    }
+    .descCarousel button{
+        font-size:  2rem !important;
+        margin: 0 !important;
+    }
+    .descCarousel{
+        order: 0;
+    }
+    .carouselNav{
+        order: 1;
+    }
+}
+
+@media screen and (max-width: 550px){
+    .descCarousel button{
+        font-size:  1.5rem !important;
+        margin: 0 !important;
+    }
+}

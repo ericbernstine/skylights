@@ -1,0 +1,22 @@
+@media screen and (max-width:800px){
+    .flex{
+        flex-direction: column !important;
+    }
+    .inner{
+        margin-left: 10px !important;
+    }
+    .roofing_disclaimer {
+        width: 80% !important;
+    }
+    .imgBlock h4{
+        font-size: 200% !important;
+    }
+    .slider_button{
+        font-size: 140%;
+        padding: .8rem;
+    }
+    .slider_line{
+        padding: .25rem;
+    }
+
+}

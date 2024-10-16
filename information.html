@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- BOOTSTRAP CDN 4.0-->
+  <!-- needed to downgrade to 4.0, collapse divs do not work on 5.3.3 -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+    crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="styles/media_queries/query_information.css">
+  <link rel="stylesheet" href="styles/media_queries/query_headingSection.css">
+  <link rel="stylesheet" href="styles/media_queries/query_footerSection.css">
+  <link rel="stylesheet" href="styles/master.css">
+  <link rel="stylesheet" href="styles/information.css">
+
+  <title>Skylight Pros by Blue Bell</title>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+</head>
+
+<body>
+  <div class="headingSection">
+    <div id="innerHeading">
+      <img class='logo' src="images/logo.png" alt="">
+      <div class="menuHolder">
+        <div id="menu">
+          <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+
+            <li>
+              <div class="dropdown">
+                <button class="dropdown-toggle" type="button" id="dropdownMenuButton" data-bs-toggle="dropdown"
+                  aria-expanded="false">
+                  Shop
+                </button>
+                <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                  <li><a class="dropdown-item" href="shopPage_skylights.html">Skylights</a></li>
+                  <li><a class="dropdown-item" href="shopPage_sunTunels.html">Sun Tunnels</a></li>
+                  <li><a class="dropdown-item" href="shopPage_roofWindows.html">Roof Access
+                      Windows</a></li>
+                  <li><a class="dropdown-item" href="roofing.html">Roofing</a></li>
+                  <li><a class="dropdown-item" href="siding.html">Siding</a></li>
+                </ul>
+              </div>
+            </li>
+
+
+            <li><a href="">Gallery</a></li>
+            <li><a href="#">Reviews</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="information.html">Resources</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="burger" id='burger'>
+      <div class="inactive line"></div>
+      <div class="inactive line"></div>
+      <div class="inactive line"></div>
+    </div>
+  </div>
+
+
+
+  <div class="mainBlock">
+    <div class="descriptionBlock">
+
+      <div class="ques1">
+        <h4>What kind of Warranty is offered?</h4>
+        <p>
+          <a class="btn btn-outline-primary" data-bs-toggle="collapse" href="#collapseExampleques1"
+            id="collapseExampleques1_btn" role="button" aria-expanded="false"
+            onclick="collapseButton('collapseExampleques1_btn')" aria-controls="collapseExample">
+            Click for details
+          </a>
+        </p>
+        <div class="collapse" id="collapseExampleques1">
+
+          <div class="card card-body">
+            <p>The Velux deck mounted skylights come with an industry-first 10-year
+              “No Leak” installation warranty that covers correct skylight and
+              appropriate flashing installations (product and labor) against
+              leaks, no matter who installs the skylight.</p>
+            <p><a href="https://www.veluxusa.com/help/velux-warranty">Reference</a></p>
+          </div>
+        </div>
+      </div>
+
+
+      <div class="ques2">
+        <h4>Quality Assurance?</h4>
+        <p>
+          <a class="btn btn-outline-primary" data-bs-toggle="collapse" href="#collapseExampleques2"
+            id="collapseExampleques2_btn" onclick="collapseButton('collapseExampleques2_btn')" role="button"
+            aria-expanded="false" aria-controls="collapseExample">
+            Click for details
+          </a>
+        </p>
+        <div class="collapse" id="collapseExampleques2">
+          <div class="card card-body">
+            <p>
+              Quality is rooted in treating your customer’s home the same way you want your home
+              treated.
+              Unlike other skylight installers, roofers, and or contractor; Skylight Pros by Blue Bell
+              ensures your skylight replacement or new installation will not leak by removing old
+              shingles
+              from around the units. Once the old shingles are removed, later of underlayment is
+              installed
+              on the roof deck prior to the installation of the new skylight and corresponding
+              flashing
+              kits.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="ques5">
+        <h4>Why Trust Skylight by Blue Bell?</h4>
+        <p>
+          <a class="btn btn-outline-primary" data-bs-toggle="collapse" href="#collapseExampleques5" role="button"
+            aria-expanded="false" onclick="collapseButton('collapseExampleques5_btn')" aria-controls="collapseExample"
+            id="collapseExampleques5_btn">
+            Click for details
+          </a>
+        </p>
+        <div class="collapse" id="collapseExampleques5">
+          <div class="card card-body">
+            <p>
+              As a local, family-owned business, we take pride in providing top-rated skylight
+              installation and
+              repair services. Our commitment to quality and customer satisfaction has earned us a
+              stellar
+              reputation. With certified craftsmanship, we treat every project with care and
+              attention.
+              Trust
+              us to brighten your home with our expertise and personalized service.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="ques4">
+        <h4>Health Benefits of skylights?</h4>
+        <p>
+          <a class="btn btn-outline-primary" data-bs-toggle="collapse" href="#collapseExampleques4"
+            onclick="collapseButton('collapseExampleques4_btn')" role="button" aria-expanded="false"
+            aria-controls="collapseExample" id="collapseExampleques4_btn">
+            Click for details
+          </a>
+        </p>
+        <div class="collapse" id="collapseExampleques4">
+          <div class="card card-body">
+            <p>Access to natural light helps regulate the human body’s natural circadian rhythm, which
+              supports
+              metabolic processes and leads to more restful sleep. Through the hormone melatonin, the
+              circadian system regulates cycles of wakefulness and sleepiness. The natural human
+              circadian. When people are deprived
+              of exposure to natural cycles of darkness and light, the production of melatonin is
+              disrupted,
+              as are the cycles of alertness and sleepiness, potentially leading to sleep
+              disturbances.</p>
+            </p>
+            <p>Operable skylights can improve indoor air quality by allowing fresh air to circulate,
+              reducing
+              the buildup of pollutants and moisture. This can be particularly beneficial in areas
+              like
+              kitchens and bathrooms, where ventilation is needed to prevent mold and mildew</p>
+            <p><a href="https://continuingeducation.bnpmedia.com/article_print.php?C=2149&L=32">Reference</a>
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="ques3">
+        <h4>Save money with a skylight?</h4>
+        <p>
+          <a class="btn btn-outline-primary" data-bs-toggle="collapse" href="#collapseExampleques3"
+            onclick="collapseButton('collapseExampleques3_btn')" role="button" aria-expanded="false"
+            aria-controls="collapseExample" id="collapseExampleques3_btn">
+            Click for details
+          </a>
+        </p>
+        <div class="collapse" id="collapseExampleques3">
+          <div class="card card-body">
+            <p> When installed by a professional an energy-efficient skylight can help minimize your
+              heating, cooling, and lighting costs.</p>
+            <p>Those on east-facing roofs provide maximum light and solar heat gain in the morning.
+              West-facing skylights provide afternoon sunlight and heat gain. South-facing skylights
+              provide the greatest potential for desirable winter passive solar heat gain than any
+              other location, but often allow unwanted heat gain in the summer.</p>
+            <p><a href="https://www.energy.gov/energysaver/windows-doors-and-skylights">Reference</a>
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="imgslot">
+        <img src="images/logo.png" alt="" srcset="">
+      </div>
+    </div>
+
+    <div class="footnote">
+      <div class="footQuote">
+        <p>Have any other questions we missed? Any topic not covered? Please reach out to us via email or
+          telephone.
+          We would be happy to provide any assistance you may need. To contact us <a href="contact.html">click
+            here</a> or call us at <a href="tel:215-200-8756">215-200-8756</a>
+        </p>
+      </div>
+    </div>
+  </div>
+
+  <!-- FOOTER -->
+  <div class="sponsorImages">
+    <img src="images/Sponsors/homeAdvisor.png" alt="">
+    <img src="images/Sponsors/enterBank.png" alt="">
+    <img src="images/Sponsors/velux.png" alt="">
+    <div class="smallLogo"><img src="images/smallLogo.png" alt=""></div>
+  </div>
+  <div class="sponsorSectionSecondary">
+
+    <div class='sponsorBlock'>
+      <div class='homeAdvisor'>
+        <div class="sponsorText">
+          <div class="sponsorContent">
+            <a href="https://www.homeadvisor.com/cost/doors-and-windows/install-a-skylight/">
+              <div class="irsClick">CLICK HERE</div>
+              Compare Skylight Installation Quotes
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class='sponsorBlock'>
+      <div class='enterBank'>
+        <div class="sponsorText">
+          <div class="sponsorContent">
+            <a
+              href="https://application.enerbank.com/apply/loanproduct?sponsorPhoneNumber=8666443660&contractorNumber=1045&loanCode=DVL8724&estimatedCost=&projectTypeId=">
+              <div class="irsClick">CLICK HERE</div>
+              Apply for a Home Improvement Loan
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+    <div class='sponsorBlock'>
+      <div class='velux'>
+        <div class="sponsorText">
+          <div class="sponsorContent">
+            <a href="https://www.veluxusa.com/">
+              <div class="irsClick">CLICK HERE</div>
+              Additional Info about our Manufacturer
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class='sponsorBlock'>
+      <div class='blueBell'>
+        <div class="sponsorText">
+          <div class="sponsorContent">
+            <a href="#">
+              <div class="irsClick">CLICK HERE</div>
+              Enter to win a Free Skylight
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="watermark">Skylight Pros By Blue Bell
+      <script>document.write(new Date().getFullYear())</script>© Web Design by Eric Bernstine
+    </div>
+  </div>
+
+  <!-- QUERY FOOTER -->
+  <div class="sponsorQuery">
+    <div class="topImages">
+      <div class="homeadvisor"><img src="images/Sponsors/homeAdvisor.png" alt=""></div>
+      <div class="enterbank"><img src="images/Sponsors/enterBank.png" alt=""></div>
+    </div>
+    <div class="top">
+
+      <div class='sponsorBlock'>
+        <div class='homeAdvisor'>
+          <div class="sponsorText">
+            <div class="sponsorContent">
+              <a href="https://www.homeadvisor.com/cost/doors-and-windows/install-a-skylight/">
+                <div class="irsClick">CLICK HERE</div>
+                Compare Skylight Installation Quotes
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class='sponsorBlock'>
+        <div class='enterBank'>
+          <div class="sponsorText">
+            <div class="sponsorContent">
+              <a
+                href="https://application.enerbank.com/apply/loanproduct?sponsorPhoneNumber=8666443660&contractorNumber=1045&loanCode=DVL8724&estimatedCost=&projectTypeId=">
+                <div class="irsClick">CLICK HERE</div>
+                Apply for a Home Improvement Loan
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="bottomImages">
+      <div class="bottom_velux"><img src="images/Sponsors/velux.png" alt=""></div>
+      <div class="bottom_smallLogo"><img src="images/smallLogo.png" alt=""></div>
+    </div>
+
+    <div class="bottom">
+      <div class='sponsorBlock'>
+        <div class='velux'>
+          <div class="sponsorText">
+            <div class="sponsorContent">
+              <a href="https://www.veluxusa.com/">
+                <div class="irsClick">CLICK HERE</div>
+                Additional Info about our Manufacturer
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class='sponsorBlock'>
+        <div class='blueBell'>
+          <div class="sponsorText">
+            <div class="sponsorContent">
+              <a href="#">
+                <div class="irsClick">CLICK HERE</div>
+                Enter to win a Free Skylight
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="watermark">Skylight Pros By Blue Bell
+      <script>document.write(new Date().getFullYear())</script>© Web Design by Eric Bernstine
+    </div>
+  </div>
+  <script src="script/query_script/query_headingSection.js"></script>
+  <script src="script/information.js"></script>
+</body>
+
+</html>

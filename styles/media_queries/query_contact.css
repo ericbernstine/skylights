@@ -1,0 +1,245 @@
+@media screen and (max-width:1240px) {
+    .contactBurger {
+        top: 5%
+    }
+}
+@media screen and (max-width: 1000px) {
+    .sponsorSectionSecondary {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 950px) {
+    .estimateBlock {
+        width: 95% !important;
+    }
+    .innerContactInfo{
+        grid-column: 5 / 9 !important;
+        grid-row: 5 / 9;
+    }
+
+    .whyContact {
+        grid-column: 1 / 4 !important;
+        grid-row: 6 / 9 !important;
+        margin-left: 10px !important;
+        margin-top: 4%;
+        width: 100% !important;
+        height: 80% !important;
+    }
+
+    .query_locations {
+        width: 100% !important;
+        grid-column: 5 / 9 !important;
+        grid-row: 8 / 9 !important;
+        display: block !important;
+    }
+
+    .query_locations p {
+        padding: 1px;
+        margin: 0;
+    }
+
+    .query_locations h5 {
+        padding-bottom: 5px;
+        padding-top: 0px;
+        padding-left: 0px;
+        padding-right: 0px;
+        margin: 0;
+    }
+
+    .estiamteForm {
+        grid-column: 1 / 9 !important;
+        grid-row: 1 / 6 !important;
+        display: flex !important;
+        align-items: center !important;
+        justify-content: center !important;
+    }
+
+    .estiamteForm h1 {
+        font-weight: 600 !important;
+    }
+
+    .inner_estiamteForm {
+        margin-top: 0px !important;
+        margin-left: 0px !important;
+        gap: 0px !important;
+        width: 98% !important;
+        height: 96% !important;
+        border-radius: 5px !important;
+        padding-bottom: 45px !important;
+    }
+
+    .inner_estiamteForm button {
+        margin-top: 10px !important;
+    }
+
+    .estimateLogoHeading {
+        margin-bottom: 5px !important;
+    }
+
+    .estimateLogo {
+        width: 120px !important;
+        height: auto !important;
+        margin-top: 35px !important;
+    }
+
+
+    .headingNote {
+        padding-top: 10px !important;
+        font-size: smaller !important;
+    }
+
+    .contactInfo {
+        margin-top: 10px !important;
+        grid-column: 5 / 9 !important;
+        grid-row: 6 / 9 !important;
+        margin-left: 0% !important;
+    }
+
+    .contactInfo .locations {
+        display: none !important;
+    }
+
+    .contactInfo h5 {
+        font-size: 80% !important;
+        padding: 2px;
+        margin: 0;
+    }
+
+    .estimateBlock p {
+        font-size: 70% !important;
+    }
+
+    .query_locations h5 {
+        font-size: 80% !important;
+    }
+
+    .query_locations p {
+        font-size: 70% !important;
+    }
+
+    .estimateBlock h3 {
+        font-size: 90% !important;
+    }
+
+    .contactInfo a {
+        font-size: 80% !important;
+    }
+
+    .headingNote {
+        font-size: 80% !important;
+    }
+
+    .locations {
+        margin-top: 0px !important;
+    }
+
+    .ourPhone {
+        margin-top: 5px;
+        grid-column: 1 / 5 !important;
+        grid-row: 2 / 2 !important;
+    }
+
+}
+
+@media screen and (max-width: 750px) {
+    .estimateBlock p {
+        font-size: 50% !important;
+    }
+
+    .contactInfo a {
+        font-size: 70% !important;
+    }
+    .query_locations{
+        grid-column: 1 / 9 !important;
+        grid-row: 8 / 9 !important;
+        margin-left: 10px !important;
+    }
+    .estimateLogo {
+        width: 80px !important;
+        height: auto !important;
+        margin-top: 15px !important;
+    }
+
+    .estimateHeading {
+        font-size: 90% !important;
+        position: relative !important;
+        bottom: 15px !important;
+    }
+
+
+    
+}
+
+@media screen and (max-width: 570px) {
+    .contactInfo h5 {
+        font-size: 80% !important;
+    }
+
+    .estimateBlock p {
+        font-size: 60% !important;
+    }
+
+    .estimateBlock h3 {
+        font-size: 90% !important;
+    }
+
+    .contactInfo a {
+        font-size: 70% !important;
+    }
+
+    .whyContact h3 {
+        font-size: 65% !important;
+    }
+
+    .whyContact p {
+        font-size: 50% !important;
+    }
+    .query_locations{
+        grid-column: 1 / 9 !important;
+
+    }
+    .query_locations h5 {
+        font-size: 65% !important;
+    }
+
+    .query_locations p {
+        font-size: 50% !important;
+    }
+}
+
+@media screen and (max-width: 440px) {
+    .whyContact h3 {
+        font-size: 60% !important;
+    }
+
+    .whyContact p {
+        font-size: 40% !important;
+    }
+    .query_locations h5 {
+        font-size: 60% !important;
+    }
+
+    .query_locations p {
+        font-size: 40% !important;
+    }
+    .contactInfo a {
+        font-size: 50% !important;
+    }
+    .estimateLogo {
+        width: 75px !important;
+        height: auto !important;
+        margin-top: 15px !important;
+    }
+    .estimateHeading {
+        font-size: 88% !important;
+        position: relative !important;
+        bottom: 15px !important;
+    }
+    .inner_estiamteForm p{
+        font-size: 50% !important;
+    }
+    .inner_estiamteForm button{
+        transform: scale(0.8) !important;
+    }
+}

@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+
+    <link rel="stylesheet" href="styles/media_queries/query_siding.css">
+    <link rel="stylesheet" href="styles/media_queries/query_headingSection.css">
+    <link rel="stylesheet" href="styles/media_queries/query_roof&side_mainBlock.css">
+    <link rel="stylesheet" href="styles/media_queries/query_footerSection.css">
+    <link rel="stylesheet" href="styles/master.css">
+    <link rel="stylesheet" href="styles/siding.css">
+    <title>Skylight Pros by Blue Bell</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+</head>
+
+<body>
+
+    <div class="headingSection">
+        <div id="innerHeading">
+            <img class='logo' src="images/logo.png" alt="">
+            <div class="menuHolder">
+                <div id="menu">
+                    <ul class="nav-links">
+                        <li><a href="index.html">Home</a></li>
+
+                        <li>
+                            <div class="dropdown">
+                                <button class="dropdown-toggle" type="button" id="dropdownMenuButton"
+                                    data-bs-toggle="dropdown" aria-expanded="false">
+                                    Shop
+                                </button>
+                                <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                                    <li><a class="dropdown-item" href="shopPage_skylights.html">Skylights</a></li>
+                                    <li><a class="dropdown-item" href="shopPage_sunTunels.html">Sun Tunnels</a></li>
+                                    <li><a class="dropdown-item" href="shopPage_roofWindows.html">Roof Access
+                                            Windows</a></li>
+                                    <li><a class="dropdown-item" href="roofing.html">Roofing</a></li>
+                                    <li><a class="dropdown-item" href="siding.html">Siding</a></li>
+                                </ul>
+                            </div>
+                        </li>
+
+
+                        <li><a href="index.html#gallerySection">Gallery</a></li>
+                        <li><a href="index.html#testimonialSponsorSection">Reviews</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                        <li><a href="information.html">Resources</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="burger" id='burger'>
+            <div class="inactive line"></div>
+            <div class="inactive line"></div>
+            <div class="inactive line"></div>
+        </div>
+    </div> <!-- End of heading section -->
+
+    <div class="mainBlock">
+        <div class="imgBlock1">
+            <img src="images/shop/siding/cracked_siding.jpg" alt="" srcset="">
+        </div>
+        <div class="descBlock1">
+            <h4>CRACKED SIDING?</h4>
+            <div class="descBlock1_details">
+                <p>Small description paragraph will go here, we can keep this brief and provide additional details below
+                    or
+                    hidden under button.
+                </p>
+            </div>
+            <a href="contact.html"><button class="btn btn-primary">Get a Quote</button></a>
+            <a href="tel:215-200-8756" class="btn btn-outline-primary">215 200 8756</a>
+        </div>
+        <div class="imgBlock2">
+            <img src="images/shop/siding/mold_siding.jpeg" alt="" srcset="">
+        </div>
+        <div class="descBlock2">
+            <h4>MOLD OR OTHER DAMAGE?</h4>
+            <div class="descBlock2_details">
+                <p>Small description paragraph will go here, we can keep this brief and provide additional details below
+                    or
+                    hidden under button.
+                </p>
+            </div>
+            <a href="contact.html"><button class="btn btn-primary">Get a Quote</button></a>
+            <a href="tel:215-200-8756" class="btn btn-outline-primary">215 200 8756</a>
+        </div>
+    </div>
+
+    <div class="imageSection">
+        <h4>What we offer</h4>
+        <div class="inner_imageSection">
+            <div class="imgSection_imgContainer">
+                <div class="imgBorder">
+                    <div class="imgwrap">
+                        <h6>Vinyl Siding</h6>
+                        <img src="images/shop/siding/vinyl.jpg" id='vinyl' alt="" srcset="" onclick="popUp(this)">
+                        <p>click for details...</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="imgSection_imgContainer">
+                <div class="imgBorder">
+                    <div class="imgwrap">
+                        <h6>Aluminum Siding</h6>
+                        <img src="images/shop/siding/aluminum.png" id='aluminum' alt="" onclick='popUp(this) '
+                            srcset="">
+                        <p>click for details...</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="imgSection_imgContainer">
+                <div class="imgBorder">
+                    <div class="imgwrap">
+                        <h6>Fabricated Wood Siding</h6>
+                        <img src="images/shop/siding/wood.jpg" id='wood' alt="" onclick='popUp(this)' srcset="">
+                        <p>click for details...</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="imgSection_imgContainer">
+                <div class="imgBorder">
+                    <div class="imgwrap">
+                        <h6>Siding Trim & Accessories</h6>
+                        <img src="images/shop/siding/trims.png" id='trim' alt="" onclick='popUp(this)' srcset="">
+                        <p>click for details...</p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="popup-image">
+            <span>&times;</span>
+            <img src="" alt="" srcset="">
+            <div class="popup-desc">
+                <h3></h3>
+                <p></p>
+            </div>
+        </div>
+    </div>
+    <div class="disclaimer_wrap">
+        <div class="disclaimer">
+            <p>Have any addtional questions or concerns? Reach out to us <a href="contact.html">HERE</a>
+                and talk to our experts.
+                At Skylight Pros by Blue Bell your home is our top priority.</p>
+        </div>
+    </div>
+
+
+    <!-- FOOTER -->
+    <div class="sponsorImages">
+        <img src="images/Sponsors/homeAdvisor.png" alt="">
+        <img src="images/Sponsors/enterBank.png" alt="">
+        <img src="images/Sponsors/velux.png" alt="">
+        <div class="smallLogo"><img src="images/smallLogo.png" alt=""></div>
+    </div>
+    <div class="sponsorSectionSecondary">
+        <div class='sponsorBlock'>
+            <div class='homeAdvisor'>
+                <div class="sponsorText">
+                    <div class="sponsorContent">
+                        <a href="https://www.homeadvisor.com/cost/doors-and-windows/install-a-skylight/">
+                            <div class="sponsorBlock_click">CLICK HERE</div>
+                            Compare Skylight Installation Quotes
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class='sponsorBlock'>
+            <div class='enterBank'>
+                <div class="sponsorText">
+                    <div class="sponsorContent">
+                        <a
+                            href="https://application.enerbank.com/apply/loanproduct?sponsorPhoneNumber=8666443660&contractorNumber=1045&loanCode=DVL8724&estimatedCost=&projectTypeId=">
+                            <div class="sponsorBlock_click">CLICK HERE</div>
+                            Apply for a Home Improvement Loan
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <div class='sponsorBlock'>
+            <div class='velux'>
+                <div class="sponsorText">
+                    <div class="sponsorContent">
+                        <a href="https://www.veluxusa.com/">
+                            <div class="sponsorBlock_click">CLICK HERE</div>
+                            Additional Info about our Manufacturer
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class='sponsorBlock'>
+            <div class='blueBell'>
+                <div class="sponsorText">
+                    <div class="sponsorContent">
+                        <a href="#">
+                            <div class="sponsorBlock_click">CLICK HERE</div>
+                            Enter to win a Free Skylight
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="top_watermark">Skylight Pros By Blue Bell
+        <script>document.write(new Date().getFullYear())</script>© Web Design by Eric Bernstine
+    </div>
+
+    <!-- QUERY FOOTER -->
+    <div class="sponsorQuery">
+        <div class="topImages">
+            <div class="homeadvisor"><img src="images/Sponsors/homeAdvisor.png" alt=""></div>
+            <div class="enterbank"><img src="images/Sponsors/enterBank.png" alt=""></div>
+        </div>
+        <div class="top">
+
+            <div class='sponsorBlock'>
+                <div class='homeAdvisor'>
+                    <div class="sponsorText">
+                        <div class="sponsorContent">
+                            <a href="https://www.homeadvisor.com/cost/doors-and-windows/install-a-skylight/">
+                                <div class="sponsorBlock_click">CLICK HERE</div>
+                                Compare Skylight Installation Quotes
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class='sponsorBlock'>
+                <div class='enterBank'>
+                    <div class="sponsorText">
+                        <div class="sponsorContent">
+                            <a
+                                href="https://application.enerbank.com/apply/loanproduct?sponsorPhoneNumber=8666443660&contractorNumber=1045&loanCode=DVL8724&estimatedCost=&projectTypeId=">
+                                <div class="sponsorBlock_click">CLICK HERE</div>
+                                Apply for a Home Improvement Loan
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="bottomImages">
+            <div class="bottom_velux"><img src="images/Sponsors/velux.png" alt=""></div>
+            <div class="bottom_smallLogo"><img src="images/smallLogo.png" alt=""></div>
+        </div>
+
+        <div class="bottom">
+            <div class='sponsorBlock'>
+                <div class='velux'>
+                    <div class="sponsorText">
+                        <div class="sponsorContent">
+                            <a href="https://www.veluxusa.com/">
+                                <div class="sponsorBlock_click">CLICK HERE</div>
+                                Additional Info about our Manufacturer
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class='sponsorBlock'>
+                <div class='blueBell'>
+                    <div class="sponsorText">
+                        <div class="sponsorContent">
+                            <a href="#">
+                                <div class="sponsorBlock_click">CLICK HERE</div>
+                                Enter to win a Free Skylight
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="watermark">Skylight Pros By Blue Bell
+            <script>document.write(new Date().getFullYear())</script>© Web Design by Eric Bernstine
+        </div>
+    </div>
+
+    <script src="script/query_script/query_headingSection.js"></script>
+    <script src="script/siding.js"></script>
+</body>
+
+</html>

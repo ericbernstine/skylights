@@ -1,0 +1,324 @@
+
+.mainBlock{
+    position: absolute; 
+    top: 50%; /* Center vertically */
+    left: 50%; /* Center horizontally */
+    transform: translate(-50%, -50%); 
+    width: 85%;
+    height: 85%;
+    background-color: #eeeeee;
+    opacity: 97%;
+    margin-top: 40px;
+    border-radius: 5px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 1px 20px;
+}
+.mainBlock_wrap {
+    width: 98%;
+    height: 100%;
+    align-items: center;
+    justify-content: flex-start;
+    display: flex;
+    flex-direction: row;
+    overflow-x: auto; 
+    box-sizing: border-box; 
+    scroll-snap-type: x mandatory;
+}
+
+.shopBlock {
+    flex: 0 0 70%; /* Make each block take up 90% of the mainBlock width */
+    height: 80%; /* Adjust height relative to the mainBlock */
+    margin: 15px 15%; /* Add equal margin on left and right for padding */
+    border-radius: 5px;
+    scroll-snap-align: center; /* Ensure each block snaps to the center */
+}
+
+
+.shopBlock img {
+    height: auto;
+    max-width: 100%;
+    display: block;
+    margin: 0 auto;
+}
+.shopBlock h4 {
+    padding-top: 5px;
+    margin-left: 8px;
+    font-size: 2.5em; /* Adjusted font size */
+}
+.shopBlock .flexible .shopBlock h4 {
+    font-size: 2em;
+}
+#shopBlockBtn{
+    margin-top: 8px;
+    background: #eeeeee;
+}
+#shopBlockBtn:hover{
+    background: #0369a0;
+}
+.shopBlock .description{
+    margin-top: 10px;
+    margin-left: 8px;
+    padding-bottom: 10px;
+    width: 95%;
+    height: 100%;
+}
+.manual, .electric, .solar, .fixed, .skyMax, .flatRoof {
+    background-color: #e0dcdc;
+    border-radius: 5px;
+}
+
+
+
+
+
+
+.descriptionSection{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #dddddd;
+    width: 100%;
+    height: 100%;
+}
+
+.descriptionContent{
+    background-color: #ededed;
+    width: 85%;
+    height: 100%;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+.sponsorImages{
+    padding-top: 10px !important;
+    background-color: #dddddd !important;
+}
+.sponsorSectionSecondary{
+    background-color: #dddddd !important;
+}
+.sponsorQuery{
+    background-color: #dddddd !important;
+}
+
+.descriptionBlock{
+    display: grid;
+    grid-template-columns: repeat(7, auto);
+    grid-template-rows: repeat(7, auto);
+}
+.descriptionBlockAlpha{
+    display: grid;
+    grid-template-columns: repeat(7, auto);
+    grid-template-rows: repeat(7, auto);
+}
+.descHeading{
+    grid-row: 1 / 1;
+    grid-column: 1 / 1;
+    margin-left: 8px;
+    margin-top: 5px;
+    
+}
+.disclaimer{
+    margin-left: 15px;
+    margin-top: 15px;
+    font-size: 80%;
+    width: 90%;
+    grid-row: 7 / 7;
+    grid-column: 1 / 7;
+}
+.descCarousel{
+    grid-row: 2 / 2;
+    grid-column: 1 / 1;
+    margin-left: 10px;
+}
+/* carousel buttons */
+.descCarousel button{
+    margin: 5px;
+    position: absolute;
+    font-size: 2.5rem;
+    top: 50%;
+    transform: translateY(-50%);
+    border: none;
+    background-color: #727272;
+    border-radius: 20px;
+    color: #eeeeee;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+.descCarousel button:hover{
+    color: #0369a0;
+    background-color: #84848460;
+}
+.prev{
+  left: 0;
+}
+.next{
+    right: 10px;
+}
+
+.slider{
+    position: relative;
+    width: 100%;
+    margin: auto;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+}
+.slides {
+    display: flex; /* Ensure that images are in a row */
+    justify-content: center;
+    align-items: center;
+    height: 300px; /* Set a fixed height for the slider */
+    width: 400px;
+}
+
+.slides img {
+    height: 100%; /* Ensure images fill the height of the container */
+    width: auto; /* Maintain aspect ratio */
+    max-width: 400px;
+    display: none;
+    object-fit: contain; /* Ensure images fit within the container */
+    border-radius: 5px;
+}
+.slider button{
+    font-size: 2.5rem;
+}
+.slides img:hover{
+    cursor: pointer;
+}
+
+img.displaySlide{
+    display: block;
+    animation-name: fade;
+    animation-duration: 2s;
+}
+@keyframes fade {
+    from {opacity: .1}
+    to {opacity: 1}
+}
+
+/* Carousel Nav */
+.carouselNav{
+    margin-top: 30px;
+    grid-row: 3 / 3;
+    display: flex;
+    justify-content: center;
+}
+.carouselNav .carouselIndicator.curInd {
+    background: rgba(0, 0, 0, 0.9);
+}
+
+.carouselIndicator{
+    border: 0;
+    border-radius: 50%;
+    width: 15px;
+    height: 15px;
+    background: rgba(0, 0, 0, 0.4);
+    margin: 0 12px;
+    cursor: pointer;
+}
+
+/* PopUp functionality */
+.slider .popup-image{
+    position: fixed;
+    top: 0;
+    left: 0;
+    background: rgba(0, 0, 0, 0.9);
+    height: 100%;
+    width: 100%;
+    z-index: 100;
+    display: none;
+}
+
+.slider .popup-image span{
+    position: absolute;
+    top: 0; 
+    right: 15px;
+    font-size: 40px;
+    font-weight: bolder;
+    color: #fff;
+    cursor: pointer;
+    z-index: 100;
+}
+
+.slider .popup-image img{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border: 3px solid #fff;
+    border-radius: 10px;
+    width: 700px;
+    object-fit: cover;
+}
+
+@media (max-width: 900px){
+    .slider .popup-image img{
+        width: 95%;
+    }
+}
+
+
+.innerdescriptionBlock{
+    grid-row: 1 / 7;
+    grid-column: 5 / 7;
+    display: grid;
+    grid-template-columns: repeat(7, auto);
+    grid-template-rows: repeat(7, auto);
+    padding-left: 180px;
+}
+.descPricing{
+    grid-row: 2 / 2;
+    grid-column: 2 / 7;
+    margin-bottom: 15px;
+    margin-top: 20px;
+}
+.descButton{
+    margin-top: 10px;
+    margin-bottom: 10px;
+    grid-row: 3 / 3;
+    grid-column: 2 / 7;
+}
+.descButton button{
+    background: rgb(5, 128, 194);
+}
+.descButton button:hover, .descButton a:hover{
+    background: #0369a0;
+}
+.descButton a{
+    color: rgb(5, 128, 194);
+    border-color: rgb(5, 128, 194);
+}
+.descInfo{
+    grid-row: 4 / 4;
+    grid-column: 2 / 4;
+    width: 100%; /* Adjust width as needed */
+    height: 100% ;
+    overflow-y: auto; /* Make overflow scrollable vertically */
+    overflow-x: hidden; /* Hide horizontal overflow */
+}
+
+.descWarranty{
+    grid-row: 5 / 5;
+    grid-column: 2 / 5;
+}
+.descSpecs{
+    grid-row: 6 / 6;
+    grid-column: 2 / 5;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.border{
+    margin-top: 10px;
+    margin-bottom: 10px;
+    position: relative;
+    top: 50%; /* Center vertically */
+    left: 50%; /* Center horizontally */
+    transform: translate(-50%, -50%); 
+    width: 85%;
+    height: 8px;
+    border-radius: 25px;
+    background-color: #0481c3;
+    color: #0481c3;
+}

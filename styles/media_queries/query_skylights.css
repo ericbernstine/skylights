@@ -1,0 +1,120 @@
+::-webkit-scrollbar {
+  width: 12px;
+  /* Width of the scrollbar */
+}
+
+::-webkit-scrollbar-track {
+  background: #eeeeee;
+  /* Track background */
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #0a0a0a;
+  /* Thumb (scroll bar handle) color */
+  border-radius: 10px;
+  /* Round the corners */
+  border: 3px solid #f1f1f1;
+  /* Adds a border around the thumb */
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #4e4e4e;
+  /* Darker color when hovered */
+}
+
+.simplebar-scrollbar:before {
+  background-color: #0a0a0a;
+}
+
+.simplebar-track {
+  background-color: #eeeeee;
+}
+
+@media screen and (max-width: 1500px) {
+  .shopBlock img {
+    height: 350px;
+    width: auto;
+  }
+
+  .shopBlock button {
+    margin-bottom: 15px;
+  }
+}
+
+@media screen and (max-width:1230px) {
+  .innerdescriptionBlock {
+    grid-column: 4 / 7 !important;
+    padding-left: 15px !important;
+  }
+}
+
+@media screen and (max-width:1000px) {
+  .mainBlock {
+    height: 88% !important;
+  }
+
+  .shopBlock img {
+    height: 150px;
+    width: auto;
+  }
+  .descriptionContent {
+    height: auto;
+  }
+
+  .descriptionBlock {
+    display: flex !important;
+    flex-direction: column !important;
+    height: auto !important;
+  }
+
+  .innerdescriptionBlock {
+    padding-left: 15px !important;
+    margin-bottom: 55px;
+    order: 2;
+    display: flex !important;
+    flex-direction: column;
+  }
+
+  .carouselIndicator {
+    border-radius: 50% !important;
+    width: 25px !important;
+    height: 25px !important;
+    background: rgba(0, 0, 0, 0.4);
+    margin: 0 10px;
+  }
+
+  .descCarousel button {
+    font-size: 2rem !important;
+    margin: 0 !important;
+  }
+
+  .descCarousel {
+    order: 0;
+  }
+
+  .carouselNav {
+    order: 1;
+  }
+
+  .descCarousel button {
+    font-size: 1.5rem !important;
+    margin: 0 !important;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .descPricing img {
+    width: 290px !important;
+    height: auto !important;
+  }
+
+  .slides img {
+    width: 250px !important;
+    height: auto !important;
+  }
+
+  .shopBlock h4 {
+    font-size: 120%;
+  }
+}

@@ -1,0 +1,415 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- BOOTSTRAP CDN -->
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+    crossorigin="anonymous"></script>
+
+  <script src="https://static.elfsight.com/platform/platform.js" data-use-service-core defer></script>
+
+
+  <link rel="stylesheet" href="styles/master.css">
+  <link rel="stylesheet" href="styles/media_queries/query_gallerySection.css">
+  <link rel="stylesheet" href="styles/media_queries/query_headingSection.css">
+  <link rel="stylesheet" href="styles/media_queries/query_footerSection.css">
+  <link rel="stylesheet" href="styles/media_queries/query_shopSection_homePage.css">
+  <link rel="stylesheet" href="styles/contactPage.css">
+  <title>Skylight Pros by Blue Bell</title>
+</head>
+
+<body>
+
+  <!-- HEADING SECTION-->
+  <div class="headingSection">
+    <div id="innerHeading">
+      <div class="logo">
+        <img src="images/logo.png" alt="">
+      </div>
+      <div class="menuHolder">
+        <div id="menu">
+          <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+
+            <li>
+              <div class="dropdown">
+                <button class="dropdown-toggle shop" onclick='scrollShop()' type="button" id="dropdownMenuButton"
+                  data-bs-toggle="dropdown" aria-expanded="false">
+                  Shop
+                </button>
+                <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                  <li><a class="dropdown-item" href="shopPage_skylights.html">Skylights</a></li>
+                  <li><a class="dropdown-item" href="shopPage_sunTunels.html">Sun Tunnels</a></li>
+                  <li><a class="dropdown-item" href="shopPage_roofWindows.html">Roof Access Windows</a></li>
+                  <li><a class="dropdown-item" href="roofing.html">Roofing</a></li>
+                  <li><a class="dropdown-item" href="siding.html">Siding</a></li>
+                </ul>
+              </div>
+            </li>
+
+
+            <li onclick='scrollGallery()' class="gallery">Gallery</li>
+            <li onclick='scrollReviews()' class="reviews">Reviews</li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="information.html">Resources</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="bigTitle">
+        <strong>
+          <h1>Got Skylights on your mind?</h1>
+        </strong>
+        <a href='contact.html' type="button" class="btn btn-primary btn-lg">Get a Free Estimate</a>
+      </div>
+    </div>
+    <div class="burger" id='burger'>
+      <div class="inactive line"></div>
+      <div class="inactive line"></div>
+      <div class="inactive line"></div>
+    </div>
+  </div>
+
+  <!-- SHOP SECTION -->
+  <div class="homePage_shop">
+    <div class="row pricing-row" id="shopSection">
+      <div class="card" style="width: 18rem;">
+        <img src="images/skylightShop1.jpg" class="cardImg" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">Skylights</h5>
+          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
+            content.</p>
+            <div class="card_buttons">
+              <a href="shopPage_skylights.html"><button class="btn btn-primary">More Details</button></a>
+              <a href="tel:215-200-8756" class="btn btn-outline-primary">215 200 8756</a>
+            </div>
+        </div>
+      </div>
+
+      <div class="card" style="width: 18rem;">
+        <img src="images/sunTunnelShop1.jpg" class="cardImg" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">Sun Tunnels</h5>
+          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
+            content.</p>
+            <div class="card_buttons">
+              <a href="shopPage_sunTunels.html"><button class="btn btn-primary">More Details</button></a>
+              <a href="tel:215-200-8756" class="btn btn-outline-primary">215 200 8756</a>
+            </div>
+        </div>
+      </div>
+
+      <div class="card" style="width: 18rem;">
+        <img src="images/escapeHatch.jpg" class="cardImg" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">Roof Windows</h5>
+          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
+            content.</p>
+            <div class="card_buttons">
+              <a href="shopPage_roofWindows.html"><button class="btn btn-primary">More Details</button></a>
+              <a href="tel:215-200-8756" class="btn btn-outline-primary">215 200 8756</a>
+            </div>
+
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- GALLERY SECTION -->
+  <div id="gallerySection">
+    <div class="carousel">
+      <div class="list">
+        <div class="item" style="background-image: url(images/gallery/skylightGallery1.jpg);" id="skylight1">
+          <div class="content">
+            <div class="title">STANDARD <br> SKYLIGHT</div>
+            <div class="des">Lorem ipsuM dolor sit amet consectetur, adipisicing elit. Officiis culpa similique
+              consequuntur, reprehenderit dicta repudiandae.</div>
+            <div class="btn">
+              <a href="shopPage_skylights.html"><button>More Details</button></a>
+              <a href="contact.html"><button>Free Estimate</button></a>
+            </div>
+          </div>
+        </div>
+
+        <div class="item" style="background-image: url(images/gallery//solarSklightGallery1.jpg);" id="solarSkylight1">
+          <div class="content">
+            <div class="title">SOLAR <br> SKYLIGHT</div>
+            <div class="des">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Officiis culpa similique
+              consequuntur, reprehenderit dicta repudiandae.</div>
+              <div class="btn">
+                <a href="shopPage_skylights.html"><button class="details">More Details</button></a>
+                <a href="contact.html"><button class="estiamte">Free Estimate</button></a>
+              </div>
+          </div>
+        </div>
+
+        <div class="item" style="background-image: url(images/gallery/sunTunnelGalley1.jpg);" id="sunTunnel1">
+          <div class="content">
+            <div class="title">SUN <br> TUNNEL</div>
+            <div class="des">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Officiis culpa similique
+              consequuntur, reprehenderit dicta repudiandae.</div>
+              <div class="btn">
+                <a href="shopPage_sunTunels.html"><button class="details">More Details</button></a>
+                <a href="contact.html"><button class="estiamte">Free Estimate</button></a>
+              </div>
+          </div>
+        </div>
+
+        <div class="item" style="background-image: url(images/gallery/sklightGallery2.jpg);" id="skylight2">
+          <div class="content">
+            <div class="title">STANDARD <br> SKYLIGHT</div>
+            <div class="des">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Officiis culpa similique
+              consequuntur, reprehenderit dicta repudiandae.</div>
+              <div class="btn">
+                <a href="shopPage_skylights.html"><button class="details">More Details</button></a>
+                <a href="contact.html"><button class="estiamte">Free Estimate</button></a>
+              </div>
+          </div>
+        </div>
+
+        <div class="item" style="background-image: url(images/gallery/sunTunnelGalley2.jpg);" id="sunTunnel2">
+          <div class="content">
+            <div class="title">SUN <br> TUNNEL</div>
+            <div class="des">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Officiis culpa similique
+              consequuntur, reprehenderit dicta repudiandae.</div>
+              <div class="btn">
+                <a href="shopPage_sunTunels.html"><button class="details">More Details</button></a>
+                <a href="contact.html"><button class="estiamte">Free Estimate</button></a>
+              </div>
+          </div>
+        </div>
+
+        <div class="item" style="background-image: url(images/gallery/solarSklightGallery3.png);" id="solarSkylight3">
+          <div class="content">
+            <div class="title">SOLAR <br> SKYLIGHT</div>
+            <div class="des">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Officiis culpa similique
+              consequuntur, reprehenderit dicta repudiandae.</div>
+              <div class="btn">
+                <a href="shopPage_skylights.html"><button class="details">More Details</button></a>
+                <a href="contact.html"><button class="estiamte">Free Estimate</button></a>
+              </div>
+          </div>
+        </div>
+
+        <div class="item" style="background-image: url(images/gallery/sklightGallery3.jpg);" id="skylight3">
+          <div class="content">
+            <div class="title">STANDARD <br> SKYLIGHT</div>
+            <div class="des">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Officiis culpa similique
+              consequuntur, reprehenderit dicta repudiandae.</div>
+              <div class="btn">
+                <a href="shopPage_skylights.html"><button class="details">More Details</button></a>
+                <a href="contact.html"><button class="estiamte">Free Estimate</button></a>
+              </div>
+          </div>
+        </div>
+
+        <div class="item" style="background-image: url(images/gallery/sunTunnelGalley3.jpg);" id="sunTunnel3">
+          <div class="content">
+            <div class="title">SUN <br> TUNNEL</div>
+            <div class="des">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Officiis culpa similique
+              consequuntur, reprehenderit dicta repudiandae.</div>
+              <div class="btn">
+                <a href="shopPage_sunTunels.html"><button class="details">More Details</button></a>
+                <a href="contact.html"><button class="estiamte">Free Estimate</button></a>
+              </div>
+          </div>
+        </div>
+
+        <div class="item" style="background-image: url(images/gallery/solarSklightGallery2.jpg);" id="solarSkylight2">
+          <div class="content">
+            <div class="title">SOLAR <br> SKYLIGHT</div>
+            <div class="des">Lorem IPPA dolor sit amet consectetur, adipisicing elit. Officiis culpa similique
+              consequuntur, reprehenderit dicta repudiandae.</div>
+              <div class="btn">
+                <a href="shopPage_skylights.html" class="btn_top"><button class="details">More Details</button></a>
+                <a href="contact.html" class="btn_bottom"><button class="estiamte">Free Estimate</button></a>
+              </div>
+          </div>
+        </div>
+      </div>
+
+      <!--next prev button-->
+      <div class="arrows">
+        <button class="prev">
+          <span class="point">&#10094</span>
+        </button>
+        <button class="next">
+          <span class="point">&#10095</span>
+        </button>
+      </div>
+
+      <!-- time running -->
+      <div class="timeRunning"></div>
+    </div>
+  </div>
+
+  <!-- FOOTER SECTION -->
+  <div class="testimonialSponsorSection" id="testimonialSponsorSection">
+    <div class="testimonialSection">
+      <div class="elfsight-app-b2c97f88-710c-4d05-b94e-a5c5e601f585" data-elfsight-app-lazy></div>
+    </div>
+
+    <div class="number_wrap">
+      <h4>Give us a Call</h4>
+      <a href="tel:215-200-8756" class="btn btn-outline-primary">215 200 8756</a>
+    </div>
+
+    <div class="sponsorImages">
+      <img src="images/Sponsors/homeAdvisor.png" alt="">
+      <img src="images/Sponsors/enterBank.png" alt="">
+      <img src="images/Sponsors/velux.png" alt="">
+      <div class="smallLogo"><img src="images/smallLogo.png" alt=""></div>
+    </div>
+    <div class="sponsorSection">
+
+
+      <div class='sponsorBlock'>
+        <div class='homeAdvisor'>
+          <div class="sponsorText">
+            <div class="sponsorContent">
+              <a href="https://www.homeadvisor.com/cost/doors-and-windows/install-a-skylight/">
+                <div class="irsClick">CLICK HERE</div>
+                Compare Skylight Installation Quotes
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class='sponsorBlock'>
+        <div class='enterBank'>
+          <div class="sponsorText">
+            <div class="sponsorContent">
+              <a
+                href="https://application.enerbank.com/apply/loanproduct?sponsorPhoneNumber=8666443660&contractorNumber=1045&loanCode=DVL8724&estimatedCost=&projectTypeId=">
+                <div class="irsClick">CLICK HERE</div>
+                Apply for a Home Improvement Loan
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+      <div class='sponsorBlock'>
+        <div class='velux'>
+          <div class="sponsorText">
+            <div class="sponsorContent">
+              <a href="https://www.veluxusa.com/">
+                <div class="irsClick">CLICK HERE</div>
+                Additional Info about our Manufacturer
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class='sponsorBlock'>
+        <div class='blueBell'>
+          <div class="sponsorText">
+            <div class="sponsorContent">
+              <a href="#">
+                <div class="irsClick">CLICK HERE</div>
+                Enter to win a Free Skylight
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="top_watermark">Skylight Pros By Blue Bell
+      <script>document.write(new Date().getFullYear())</script>© Web Design by Eric Bernstine
+    </div>
+
+    <!-- QUERY FOOTER -->
+    <div class="sponsorQuery">
+      <div class="topImages">
+        <div class="homeadvisor"><img src="images/Sponsors/homeAdvisor.png" alt=""></div>
+        <div class="enterbank"><img src="images/Sponsors/enterBank.png" alt=""></div>
+      </div>
+      <div class="top">
+
+        <div class='sponsorBlock'>
+          <div class='homeAdvisor'>
+            <div class="sponsorText">
+              <div class="sponsorContent">
+                <a href="https://www.homeadvisor.com/cost/doors-and-windows/install-a-skylight/">
+                  <div class="irsClick">CLICK HERE</div>
+                  Compare Skylight Installation Quotes
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class='sponsorBlock'>
+          <div class='enterBank'>
+            <div class="sponsorText">
+              <div class="sponsorContent">
+                <a
+                  href="https://application.enerbank.com/apply/loanproduct?sponsorPhoneNumber=8666443660&contractorNumber=1045&loanCode=DVL8724&estimatedCost=&projectTypeId=">
+                  <div class="irsClick">CLICK HERE</div>
+                  Apply for a Home Improvement Loan
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="bottomImages">
+        <div class="bottom_velux"><img src="images/Sponsors/velux.png" alt=""></div>
+        <div class="bottom_smallLogo"><img src="images/smallLogo.png" alt=""></div>
+      </div>
+
+      <div class="bottom">
+        <div class='sponsorBlock'>
+          <div class='velux'>
+            <div class="sponsorText">
+              <div class="sponsorContent">
+                <a href="https://www.veluxusa.com/">
+                  <div class="irsClick">CLICK HERE</div>
+                  Additional Info about our Manufacturer
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class='sponsorBlock'>
+          <div class='blueBell'>
+            <div class="sponsorText">
+              <div class="sponsorContent">
+                <a href="#">
+                  <div class="irsClick">CLICK HERE</div>
+                  Enter to win a Free Skylight
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="watermark">Skylight Pros By Blue Bell
+        <script>document.write(new Date().getFullYear())</script>© Web Design by Eric Bernstine
+      </div>
+    </div>
+  </div>
+
+
+  <!-- JQUERY -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+
+  <!-- BOOTSTRAP BUNDLE -->
+  <script src="index.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@floating-ui/core@1.6.4"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@floating-ui/dom@1.6.7"></script>
+  <script src="script/query_script/query_headingSection.js"></script>
+</body>
+
+</html>

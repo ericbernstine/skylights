@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- BOOTSTRAP CDN -->
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+
+    <script src="https://static.elfsight.com/platform/platform.js" data-use-service-core defer></script>
+
+
+    <link rel="stylesheet" href="styles/master.css">
+    <link rel="stylesheet" href="TESTING.css">
+    <title>Skylight Pros by Blue Bell</title>
+</head>
+
+<body>
+    <div class="headingSection">
+        <div id="innerHeading">
+            <img class='logo' src="images/logo.png" alt="">
+            <div class="menuHolder">
+                <div id="menu">
+                        <ul class="nav-links">
+                            <li><a href="index.html">Home</a></li>
+                            <li>
+                                <div class="dropdown">
+                                    <button class="dropdown-toggle shop" onclick='scrollShop()' type="button"
+                                        id="dropdownMenuButton" data-bs-toggle="dropdown" aria-expanded="false">
+                                        Shop
+                                    </button>
+                                    <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                                        <li><a class="dropdown-item" href="shopPage_skylights.html">Skylights</a></li>
+                                        <li><a class="dropdown-item" href="shopPage_sunTunels.html">Sun Tunnels</a></li>
+                                        <li><a class="dropdown-item" href="shopPage_roofWindows.html">Roof Access
+                                                Windows</a></li>
+                                        <li><a class="dropdown-item" href="roofing.html">Roofing</a></li>
+                                        <li><a class="dropdown-item" href="siding.html">Siding</a></li>
+                                    </ul>
+                                </div>
+                            </li>
+                            <li onclick='scrollGallery()' class="gallery">Gallery</li>
+                            <li onclick='scrollReviews()' class="reviews">Reviews</li>
+                            <li><a href="contact.html">Contact</a></li>
+                            <li><a href="information.html">Resources</a></li>
+                        </ul>
+                </div>
+            </div>
+            <div class="bigTitle">
+                <strong>
+                    <h1>Got Skylights on your mind?</h1>
+                </strong>
+                <a href='contact.html' type="button" class="btn btn-primary btn-lg">Get a Free Estimate</a>
+            </div>
+        </div>
+        <div class="burger">
+            <div class="line1"></div>
+            <div class="line2"></div>
+            <div class="line3"></div>
+        </div>
+    </div>
+
+    <script src="TESTING.js"></script>
+</body>
+
+</html>

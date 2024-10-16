@@ -1,0 +1,136 @@
+.imgBlock img {
+    display: block;
+    max-width: 100%;
+}
+
+.imgBlock h4 {
+    padding-top: 5px;
+    padding-bottom: 15px;
+    font-weight: 600;
+    font-size: 350%;
+    color: rgba(5, 128, 194, 0.8);
+}
+
+.inner {
+    flex: 0 0 40%;
+}
+
+.imgBlock {
+    padding-top: 25px;
+    padding-bottom: 25px;
+    background-color: #eee;
+    display: grid;
+    place-items: center;
+    min-height: 100vh;
+}
+
+.flex {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 50px 40px
+}
+
+.container {
+    display: grid;
+    place-content: center;
+    position: relative;
+    overflow: hidden;
+    --position: 50%;
+
+}
+
+.img_container {
+    max-width: 800px;
+    max-width: 90vh;
+    aspect-ratio: 1 / 1;
+    object-fit: contain;
+}
+
+.before,
+.after {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: left;
+}
+
+.before {
+    position: absolute;
+    inset: 0;
+    width: var(--position);
+}
+
+.slider {
+    position: absolute;
+    inset: 0;
+    cursor: pointer;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+}
+
+.slider:focus-visible~.slider_button {
+    outline: 5px solid black;
+    outline-offset: 3px;
+}
+
+.slider_line {
+    position: absolute;
+    inset: 0;
+    width: .2rem;
+    height: 100%;
+    background-color: #fff;
+    left: var(--position);
+    transform: translateX(-50%);
+    pointer-events: none;
+}
+
+.slider_button {
+    position: absolute;
+    background-color: #fff;
+    color: black;
+    padding: .5rem;
+    border-radius: 100vw;
+    display: grid;
+    place-items: center;
+    top: 50%;
+    left: var(--position);
+    transform: translate(-50%, -50%);
+    pointer-events: none;
+    z-index: 200;
+    box-shadow: 1px 1px 1px hsl(0, 50%, 2%, .5);
+}
+
+
+.roofing_disclaimer {
+    margin-top: 15px !important;
+    text-align: center;
+    width: 40%;
+}
+
+.sponsorImages{
+    background-color: #eee !important;
+}
+
+.sponsorQuery{
+    background-color: #eee !important;
+}
+
+body{
+    background-color: #eee;
+}
+.descBlock1 button, .descBlock2 button{
+    background-color: rgb(5, 128, 194);
+}
+.descBlock1 a, .descBlock2 a{
+    color: rgb(5, 128, 194);
+    border-color: rgb(5, 128, 194);
+}
+.descBlock1 button:hover, 
+.descBlock1 a:hover,
+.descBlock2 button:hover, 
+.descBlock2 a:hover{
+    background: #0369a0;
+}
